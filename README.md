@@ -1,69 +1,60 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Scheduling Appointments Exercise
 
-In the project directory, you can run:
+## Specification
 
-### `yarn start`
+SE Web UI Technical Activity
+Create a website that allows you to schedule personal appointments, with the listed user stories.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+When complete, please package your code and operating instructions in a zip.file and upload. (The upload tool is located below the questions.)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Notes:
+* Please use React to build the application.
+* You can stop after three hours, even if it is incomplete.
+* You do not need to build a backend, volatile storage works for this task.
 
-### `yarn test`
+1. I would like to create appointments with a date, time, location, and description
+2. I would like to see a list of my appointments
+3. I would like to edit my appointments
+4. I would like to be able to cancel (delete) an appointment
+5. I would like the user interface to be simple yet elegant (i.e. has some quick light styling) 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Links
 
-### `yarn build`
+* [github repo](https://github.com/johndimm/schedule-appointments)
+* [live demo hosted on heroku](https://scheduling-appointments.herokuapp.com/)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Setup
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+```
+npm install
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Description
 
-### `yarn eject`
+The screen is divided into three sections:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* Scheduling -- add or edit an appointment
+* Appointments -- list existing appointments
+* Calendar -- display appointments on a calendar
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Libraries
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* react
+* react-dom
+* [big calendar library](https://github.com/intljusticemission/react-big-calendar)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+In my interview with Tim Harris, he emphasized the use of libraries.  With that in mind, I added a calendar library to this project.  It is used only for display, the actual scheduling is all done by this code.
 
-## Learn More
+## Limitations
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* testing -- normally I would start with some tests, but time is limited.
+* redux -- uses component state (useState) rather than redux, to save time on this small project.
+* typescript -- not used, again because limited time.
+* limited input validation -- you can create appointments in the past, and you can create overlapping appointments.  Input is limited by setting the type for date and time.
+* list of appointments is a table -- a better approach would use a grid control to allow sorting by fields.
+* calendar -- limited functionality to display.  You can also click on an appointment in the calendar to edit it.  A better approach would allow you to drag-n-drop an appointment to another day, and click on a day to set the date for a new appointment.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# schedule-appointments
