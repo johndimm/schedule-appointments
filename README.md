@@ -2,6 +2,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Scheduling Appointments Exercise
 
+## Developer
+
+ John Dimm
+ jdimm@yahoo.com
+
 ## Specification
 
 SE Web UI Technical Activity
