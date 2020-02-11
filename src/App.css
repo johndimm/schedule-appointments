@@ -1,0 +1,50 @@
+
+.section {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid lightgray;
+}
+
+.calendar_div {
+  clear:both;
+  width: 840px;
+}
+.calendar_component { 
+  width:800px;
+  height:400px;
+  padding: 20px;
+}
+
+.appointments_div {
+  float: left;
+}
+.appointments_div td, th {
+  text-align: left;
+  padding: 5px;
+  padding-right: 20px;
+  cursor:pointer;
+}
+
+.block label { 
+  display: inline-block; 
+  width: 100px; 
+  text-align: right;
+}
+
+.scheduling_div {
+  float: left;
+}
+
+.button_div {
+  width: 100%;
+  text-align: center;
+  font-size:24pt;
+}
+
+.subtitle {
+  font-size: 24pt;
+}
+
+.header {
+  margin-bottom: 20px;
+}
